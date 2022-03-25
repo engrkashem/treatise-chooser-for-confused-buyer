@@ -23,7 +23,7 @@ const Body = () => {
                 }
             </div>
             <div className="cart-container">
-                <h1>CArt</h1>
+                <h3>Favourite Book Cart</h3>
             </div>
         </div>
     );

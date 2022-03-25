@@ -1,7 +1,9 @@
 .product-cart-container{
     margin-top: 20px;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: 4fr 1fr;
+    position: relative;
 }
 
 .product-container{
@@ -15,4 +17,17 @@
 .cart-container{
     background-color: #ebf4f7;
     border-radius: 10px;
+}
+
+/* Body component responsiveness for mobile */
+@media only screen and (max-width:600px) {
+    .product-cart-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .product-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
 }
