@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "The Psychology of Money",
+        "price": 220,
+        "img": "https://unsplash.com/photos/aZ_MmSmAcjg",
+        "author": "Morgan Housel"
+    },
+    {
+        "id": 2,
+        "name": "Milk and Honey",
+        "price": 190,
+        "img": "https://unsplash.com/photos/CXYPfveiuis",
+        "author": "Rupi Kaur"
+    },
+    {
+        "id": 3,
+        "name": "How Motivation Works",
+        "price": 260,
+        "img": "https://unsplash.com/photos/H-LIL57PHCc",
+        "author": "MATT RIDLEY"
+    },
+    {
+        "id": 4,
+        "name": "The Picture of Dorian Gray",
+        "price": 250,
+        "img": "https://unsplash.com/photos/1i-P178kxHQ",
+        "author": "OSCAR WILD"
+    },
+    {
+        "id": 5,
+        "name": "Company of One",
+        "price": 230,
+        "img": "https://unsplash.com/photos/ViMrMawjj7s",
+        "author": "Paul Jarvis"
+    },
+    {
+        "id": 6,
+        "name": "The Two Towers",
+        "price": 200,
+        "img": "https://unsplash.com/photos/O7ygzpAL4Mc",
+        "author": "J.R.R TOLKIEN"
+    },
+    {
+        "id": 7,
+        "name": "101 Essays that will Change the way YOU THINK",
+        "price": 290,
+        "img": "https://unsplash.com/photos/V5BGaJ0VaLU",
+        "author": "BRINNA WIEST"
+    },
+    {
+        "id": 8,
+        "name": "Your HEART is The SEA",
+        "price": 210,
+        "img": "https://unsplash.com/photos/XvMiIGJFKwc",
+        "author": "Nikita Gill"
+    },
+    {
+        "id": 9,
+        "name": "DE ANTWOORDEN OP DE GROTE VRAGEN",
+        "price": 350,
+        "img": "https://unsplash.com/photos/uWHaFPVojuI",
+        "author": "STEPHEN HAWKING"
+    },
+    {
+        "id": 10,
+        "name": "ZERO To ONE",
+        "price": 240,
+        "img": "https://unsplash.com/photos/JIWPWcUnhUs",
+        "author": "PETER THIEL"
+    },
+    {
+        "id": 11,
+        "name": "I Came Upon a Light House",
+        "price": 180,
+        "img": "https://unsplash.com/photos/7gV36AfCLEM",
+        "author": "Shantanu Naidu"
+    },
+    {
+        "id": 12,
+        "name": "The Poor Kid with RICH DREAM",
+        "price": 360,
+        "img": "https://unsplash.com/photos/Phi7FezyvmY",
+        "author": "DUKU FORE"
+    }
+]
