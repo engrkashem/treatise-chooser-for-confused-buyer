@@ -7,11 +7,17 @@ const Body = () => {
 
     const [products, setProducts] = useState([]);
 
+    const [cart, setCart] = useState([])
+
     useEffect(() => {
         fetch('fakeDb.json')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
+
+    const addToCart = (id) => {
+        console.log(id)
+    }
 
     return (
         <div className='product-cart-container'>
@@ -19,11 +25,16 @@ const Body = () => {
                 {
                     products.map(product => <Product
                         product={product}
-                        key={product.id}></Product>)
+                        key={product.id}
+                        addToCart={addToCart}
+                    ></Product>)
                 }
             </div>
             <div className="cart-container">
-                <h3>Favourite Book Cart</h3>
+                <div className='cart-info'>
+
+                    <h3>Favourite Book Cart</h3>
+                </div>
             </div>
         </div>
     );
