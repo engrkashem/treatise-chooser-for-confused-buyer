@@ -1,0 +1,13 @@
+.Product-card{
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    height: 510px;
+}
+
+.Product-card img{
+    /* margin: 20px; */
+
+    width: 286px;
+    height: 286px;
+}
