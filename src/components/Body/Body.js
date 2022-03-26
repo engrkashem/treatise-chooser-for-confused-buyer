@@ -27,36 +27,27 @@ const Body = () => {
         }
     }
 
-    const generateRandomId = () => {
-        const randomID = Math.floor(Math.random() * 100)
-        if (randomID < 13) {
-            return randomID
-        }
-        else {
-            generateRandomId()
-        }
+    const generateRandomIndex = () => {
+        const randomNum = Math.floor(Math.random() * 10)
+        return randomNum;
     }
 
-    const matchRandomIdWithCartId = () => {
 
-        const randomID = generateRandomId()
-        let matchedCart = [];
-        for (const cart of carts) {
-            if (cart.id === randomID) {
-                matchedCart.push(cart)
-                return matchedCart
-            }
-        }
-        if (matchedCart === []) {
-            matchRandomIdWithCartId()
-        }
-        // return matchedCart;
-    }
 
     const chooseFromCart = () => {
-        const matchedCart = matchRandomIdWithCartId()
-        console.log(matchedCart)
-        setCarts(matchedCart)
+        if (carts.length !== 0) {
+            let randomIndex = generateRandomIndex();
+            if (randomIndex >= carts.length) {
+                return chooseFromCart()
+            }
+            else {
+                const newItem = [];
+                newItem.push(carts[randomIndex]);
+                setCarts(newItem)
+            }
+        }
+
+        // setCarts(matchedCart)
 
     }
 
