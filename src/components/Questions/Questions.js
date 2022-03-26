@@ -30,7 +30,7 @@ const Questions = () => {
                 </div>
                 <div className="answer">
                     <h3>State</h3>
-                    <p>the state is a heart of react component that represents component’s local state or information that can only be accessed or modified inside the component or by the component directory. </p>
+                    <p>the state is a heart of react component that represents components local state or information that can only be accessed or modified inside the component or by the component directory. </p>
                     <h4>Characteristics of State</h4>
                     <ul>
                         <li>It is Mutable</li>
