@@ -1,6 +1,7 @@
 # TREATISE CHOOSER
+### Sunergizes Boosting Knowledge
 
-# [Treatise Chooser](https://github.com/facebook/create-react-app).
+# [Treatise Chooser](https://treatise-chooser.netlify.app/).
 
-## Pleas Find here my Live Site Link (https://github.com/facebook/create-react-app).
+## Pleas Find here my Live Site Link (https://treatise-chooser.netlify.app/).
 
