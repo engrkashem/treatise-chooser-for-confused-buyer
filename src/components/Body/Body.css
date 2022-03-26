@@ -1,9 +1,13 @@
+/* full body contains product display container & cart container */
 .product-cart-container{
     margin-top: 20px;
     margin-bottom: 20px;
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
+
+
+/* product section */
 
 .product-container{
     background-color: #f7f4f4;
@@ -13,9 +17,13 @@
     margin: 0 10px;
 }
 
+
+/* Cart Style Section */
+
 .cart-container{
     background-color: #ebf4f7;
     border-radius: 10px;
+    padding: 20px;
 }
 
 .cart-info{
@@ -23,8 +31,26 @@
     top: 0;
 }
 
+/* cart button section */
+.btn-choose{
+    width: 70%;
+    margin: 5px;
+    padding: 10px;
+    background-color: #ebf4f7;
+    border: 1px solid #4db5f5;
+}
+
+.btn-for-me:hover{
+    background-color: lightskyblue;
+}
+
+.btn-again:hover{
+background-color: #f8b2b2;
+}
+
 
 /* Body component responsiveness for mobile */
+
 @media only screen and (max-width:600px) {
     .product-cart-container{
         display: flex;

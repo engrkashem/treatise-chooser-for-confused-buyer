@@ -45,6 +45,4 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    position: sticky;
-    top: 0;
 }
