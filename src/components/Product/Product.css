@@ -14,6 +14,7 @@
 .Product-card img{
     width: 286px;
     height: 286px;
+    border-radius: 10px;
 }
 
 .btn-add-cart{
@@ -37,12 +38,3 @@
     margin-right: 10px;
 }
 
-/* Cart Style Section */
-
-.cart-container{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-}
