@@ -16,6 +16,9 @@ const Header = () => {
                     <a href="/about">About</a>
                 </div>
             </div>
+            <div className='sliding-text'>
+                <marquee behavior="alternate" direction="">Synergizes Boosting Knowledge</marquee>
+            </div>
         </nav>
     );
 };

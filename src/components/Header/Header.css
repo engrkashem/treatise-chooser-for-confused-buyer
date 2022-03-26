@@ -23,6 +23,13 @@
     color: blue;
 }
 
+.sliding-text{
+    color: blue;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px;
+}
+
 /* Navbar Responsiveness for mobile  */
 @media only screen and (max-width:600px) {
     .header{

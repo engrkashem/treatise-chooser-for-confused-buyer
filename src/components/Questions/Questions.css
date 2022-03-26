@@ -1,0 +1,21 @@
+.question-answer-container{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: lightyellow;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+
+.question-answer-card{
+    border: 2px solid darkslategrey;
+    border-radius: 10px;
+    background-color: lightcyan;
+    padding: 10px;
+    font-weight: 500;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
