@@ -20,7 +20,7 @@
     align-items: center;
 }
 
-
+/* responsive to mobile device of question and answer section */
 @media only screen and (max-width:600px) {
     .question-answer-container{
         display: grid;

@@ -6,9 +6,11 @@ import './Body.css'
 
 const Body = () => {
 
+    //state for displaying products
     const [products, setProducts] = useState([]);
 
-    const [carts, setCarts] = useState([])
+    // state for adding items to cart
+    const [carts, setCarts] = useState([]);
 
     useEffect(() => {
         fetch('fakeDb.json')
@@ -16,24 +18,25 @@ const Body = () => {
             .then(data => setProducts(data))
     }, [])
 
+    //add to cart event handler
     const addToCart = (book) => {
         if (carts.length < 4) {
-            const newCart = [...carts, book];
-            setCarts(newCart)
-
+            const newCarts = carts.filter(cart => cart.id !== book.id)
+            newCarts.push(book)
+            setCarts(newCarts)
         }
         else {
             alert('Oppps!!! You Have added maximum')
         }
     }
 
+    //function to generate  random number
     const generateRandomIndex = () => {
         const randomNum = Math.floor(Math.random() * 10)
         return randomNum;
     }
 
-
-
+    // Choose One from Cart Event Handler
     const chooseFromCart = () => {
         if (carts.length !== 0) {
             let randomIndex = generateRandomIndex();
@@ -46,26 +49,17 @@ const Body = () => {
                 setCarts(newItem)
             }
         }
-
-        // setCarts(matchedCart)
-
     }
 
+    //remove item from Event Handler
     const removeCart = () => {
         setCarts([])
     }
 
-    /*  const chooseOneRandomly = (cart) => {
-         const randomID = Math.floor(Math.random() * 10)
-         // console.log(cart.id, randomID)
-         if (cart.id === randomID) {
-             const newCart = [cart]
-             setCarts(newCart)
-         }
-         else {
-             chooseOneRandomly(cart)
-         }
-     } */
+    const removeItem = (item) => {
+        console.log('clicked')
+    }
+
 
     return (
         <div className='product-cart-container'>
@@ -86,6 +80,7 @@ const Body = () => {
                         carts.map(book => <Cart
                             key={book.id}
                             book={book}
+                            removeItem={removeItem}
                         ></Cart>)
                     }
                     <button onClick={chooseFromCart} className='btn-choose btn-for-me'>
