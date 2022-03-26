@@ -29,6 +29,26 @@ const Questions = () => {
                     <h2>What is the Difference between <code>props</code> and <code>state</code></h2>
                 </div>
                 <div className="answer">
+                    <h3>State</h3>
+                    <p>the state is a heart of react component that represents component’s local state or information that can only be accessed or modified inside the component or by the component directory. </p>
+                    <h4>Characteristics of State</h4>
+                    <ul>
+                        <li>It is Mutable</li>
+                        <li>Its changes can be asynchronous</li>
+                        <li>Can not be accessed by child component</li>
+                        <li>Stateless component can not have state</li>
+                        <li>It can not make component reusable</li>
+                    </ul>
+                    <h3>Props</h3>
+                    <p>Props are read-only component that work similar to the HTML attributes by which data are passed from one component to another  </p>
+                    <h4>Characteristics of Props</h4>
+                    <ul>
+                        <li>It is immutable</li>
+                        <li>Props are read-only</li>
+                        <li>Can  be accessed by child component</li>
+                        <li>Stateless component can  have Props</li>
+                        <li>props  make component reusable</li>
+                    </ul>
 
                 </div>
             </div>
