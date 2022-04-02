@@ -56,8 +56,11 @@ const Body = () => {
         setCarts([])
     }
 
-    const removeItem = (item) => {
-        console.log('clicked')
+    const removeItem = (id) => {
+        if (carts) {
+            const rest = carts.filter(cart => cart.id !== id);
+            setCarts(rest);
+        }
     }
 
 
